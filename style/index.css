@@ -176,10 +176,16 @@ a{
     font-size: 2.375rem;
     font-weight: 700;
 }
+.place img{
+    max-width: 100%;
+}
 /* responsive */
 @media screen and (max-width:576px) {
     .place-container{
         flex-direction: column-reverse;
+    }
+    .place-container img{
+        margin-top: -100px;
     }
 
     
@@ -196,6 +202,7 @@ a{
     padding: 50px 550px;
     height: 200px;
     background-color: aqua;
+    margin-bottom: 120px;
 }
 .footer-icon{
     display: flex;
@@ -207,8 +214,14 @@ a{
 }
 /* responsive */
 @media screen and (max-width:567px) {
-    .footer{
-        flex-direction: column;
-    }
-    
+.footer{
+    padding: 25px;
+    margin-top: 150px;
+}   
 }
+@media screen and (min-width:576px) and (max-width:992px) {
+    .footer{
+        padding: 25px;
+        margin-top: 150px;
+    }    
+    }
